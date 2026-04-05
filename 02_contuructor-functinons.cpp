@@ -21,14 +21,18 @@ public:
         cout << "Company - " << Company << endl;
         cout << "Age - " << Age << endl;
     }
+
+    Employee(string name, string company, int age) // constructor
+    {
+        Name = name;
+        Company = company;
+        Age = age;
+    }   
 };
 int main()
 {
 
-    Employee emp1;
-    emp1.Name = "Varun";
-    emp1.Company = "Google";
-    emp1.Age = 30;
+    Employee emp1("Varun", "Google", 30);
 
     emp1.IntroduceYourself();
     return 0;
